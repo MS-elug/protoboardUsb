@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="usbApp">
+
+<head>
+    <script src="/libs/angular-1.5.3/angular.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
+</head>
+
+<body ng-controller="mainController">
+    <div>
+        <input class="btn-primary" type="submit" ng-click="ledControl('1',true)" value="Allumer led 1">
+        <input class="btn-primary" type="submit" ng-click="ledControl('1',false)" value="Eteindre led 1">
+    </div>
+</body>
+
+</html>
